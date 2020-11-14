@@ -15,7 +15,7 @@ public class Main {
                         })
                         .dataSource("MySQLDS", (ds) -> {
                             ds.driverName("mysql");
-                            ds.connectionUrl("jdbc:mysql://"+host+":8889/todo");
+                            ds.connectionUrl("jdbc:mysql://"+host+":8889/todo?serverTimezone=UTC");
                             ds.userName("root");
                             ds.password("root");
                         }))
